@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <script src="https://kit.fontawesome.com/3b7eb551b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wraper">
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__logo">
+                    <a href="index.html" title="logo"><img src="assets/img/logo.webp" alt=""></a>
+                </div>
+                <div class="header__title">
+                    <h1><a href="index.html" title="">BlackHoleCamp</a></h1>
+                </div>
+                <div class="header__nav">
+                    <div class="header__item">
+                        <a href="#" title="">Info</a>
+                    </div>
+                    <div class="header__item">
+                        <a href="#" title="">Service</a>
+                    </div>
+                    <div class="header__item">
+                        <a href="#" title="">Content</a>
+                    </div>
+                    <div class="header__item">
+                        <a href="#" title="">About</a>
+                    </div>
+                </div>
+                <div class="header__form">
+                    <div class="header__login">
+                        <a href="login.html">Log in</a>
+                    </div>
+                    <div class="header__reg">
+                        <a href="register.html">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <content class="content">
+        <div class="container">
+            <div class="content__form">
+                <form action="#" method="post" class="form" id="registerForm" name="reg">
+                    <div class="form__logo form__sign">
+                        <a href="index.html" title="logo"><img src="assets/img/logo.webp" alt=""></a>
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <label for="email">Email</label>
+                        <input required type="email" id="email" placeholder="lorem@example.com" name="email"
+                               oninvalid="">
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <label for="password">Password</label>
+                        <input required type="password" id="password" name="password" placeholder="********"
+                               minlength="6">
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <label for="pNumber">Phone number</label>
+                        <input required type="tel" id="pNumber" placeholder="+38(0__)-___-__-__" name="pNumber"
+                               pattern=".{19,}">
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <label for="sname">Surname</label>
+                        <input required type="text" id="sname" name="Sname" placeholder="Petrow" maxlength="20">
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <label for="name">Name</label>
+                        <input required type="text" id="name" name="name" placeholder="Petro" maxlength="20">
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <label for="Mname">Middle Name</label>
+                        <input required type="text" id="Mname" name="Mname" placeholder="Petriwich">
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <label for="Bdate">Date of birth</label>
+                        <input required type="date" id="Bdate" name="Bdate" min="2005-01-01" placeholder="01.01.1900">
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <label for="groups">Group</label>
+                        <select id="groups" name="groups" required>
+                            <option value="IA-11">ІА-11</option>
+                            <option value="IA-12">ІА-12</option>
+                            <option value="IA-13">ІА-13</option>
+                            <option value="IA-14">ІА-14</option>
+                        </select>
+                    </div>
+                    <div class="form__radio">
+                        <div class="radio__title">Gender</div>
+                        <div class="radio__section">
+                            <input type="radio" name="gender" id="male" value="Male" required checked>
+                            <label for="male">Male</label></div>
+                        <div class="radio__section">
+                            <input type="radio" name="gender" id="female" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="form__inputs form__sign">
+                        <button type="submit" form="registerForm">Sign up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="content__table">
+                <div class="content__subtitle subtitle table__subtitle">
+                    <h2>Table</h2>
+                </div>
+                <div class="content__table-body">
+                    <table class="table" id="table">
+                        <tr>
+                            <th>Selection</th>
+                            <th>Surname</th>
+                            <th>Name</th>
+                            <th>MiddleName</th>
+                            <th>Date of birth</th>
+                            <th>Group</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Password</th>
+                            <th>Gender</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="studentCheck" class='table__check'></td>
+                            <td>Anton</td>
+                            <td>Vorobei</td>
+                            <td>Olegovich</td>
+                            <td>2004-15-06</td>
+                            <td>IA-11</td>
+                            <td>eaxmple@example.com</td>
+                            <td>+38 (050) 234-44-65</td>
+                            <td>asdadadadasd</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="studentCheck" class='table__check'></td>
+                            <td>Ant</td>
+                            <td>Vorobei</td>
+                            <td>Olegovich</td>
+                            <td>2000-00-00</td>
+                            <td>IA-11</td>
+                            <td>eaxmple@example.com</td>
+                            <td>+38 (050) 234-44-65</td>
+                            <td>asdadadadasd</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="studentCheck" class='table__check'></td>
+                            <td>Anto</td>
+                            <td>Vorobei</td>
+                            <td>Olegovich</td>
+                            <td>2003-11-01</td>
+                            <td>IA-11</td>
+                            <td>eaxmple@example.com</td>
+                            <td>+38 (050) 234-44-65</td>
+                            <td>asdadadadasd</td>
+                            <td>Male</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content__buttons buttons">
+                    <div class="buttons__row">
+                        <div class="buttons__item item1">
+                            <button name="tableButton">Delete</button>
+                        </div>
+                        <div class="buttons__item item2">
+                            <button name="tableButton">Duplicate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </content>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__mainrow">
+                <div class="footer__column">
+                    <div class="footer__subtitle">Структура</div>
+                    <div class="footer__ref">Дистанційна освіта</div>
+                    <div class="footer__ref">Академічна мобільність</div>
+                    <div class="footer__ref">Перепідготовка</div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__subtitle">Можливості користувачів</div>
+                    <div class="footer__ref">Ректорат</div>
+                    <div class="footer__ref">Вчена рада</div>
+                    <div class="footer__ref">Департапмент</div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__subtitle">Для користувачів</div>
+                    <div class="footer__ref">Школяру</div>
+                    <div class="footer__ref">Вступнику</div>
+                    <div class="footer__ref">Першокурснику</div>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="footer__items">
+                    <div class="footer__item"><a href="https://telegram.me/Chirik_Chir1k"><i
+                            class="fa-brands fa-telegram fa-bounce fa-4x"></i></a></div>
+                    <div class="footer__item"><a href="https://wa.me/3896066942?text=Hello!"><i
+                            class="fa-brands fa-whatsapp fa-bounce fa-4x"></i></a></div>
+                    <div class="footer__item"><a href="mailto:tonujet@gmail.com"><i
+                            class="fa-regular fa-envelope fa-bounce fa-4x"></i></a></div>
+                    <div class="footer__item"><a href="tel:+380502344465"><i
+                            class="fa-solid fa-phone fa-bounce fa-4x"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/style/style.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log in</title>
+	<script src="https://kit.fontawesome.com/3b7eb551b6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="wraper">
+		<header class="header">
+			<!-- @import "header.html" -->
+		</header>
+		<content class="content">
+			<div class="content__form">
+				<form action="#" method="post" class="form" id="registerForm">
+					<div class="form__logo form__sign">
+						<a href="index.html" title="logo"><img src="assets/img/logo.webp" alt=""></a>
+					</div>
+					<div class="form__inputs form__sign">
+						<label for="email">Email</label>
+						<input required type="email" id="email" placeholder="lorem@example.com" name="email">
+					</div>
+					<div class="form__inputs form__sign">
+						<label for="password">Password</label>
+						<input required type="password" id="password" name="password" placeholder="********">
+					</div>
+					<div class="form__inputs form__sign">
+						<label for="sname">Surname</label>
+						<input required type="text" id="sname" name="sname" placeholder="Petrow">
+					</div>
+					<div class="form__inputs form__sign">
+						<label for="name">Name</label>
+						<input required type="text" id="name" name="name" placeholder="Petro">
+					</div>
+					<div class="form__inputs form__sign">
+						<label for="Mname">Middle Name</label>
+						<input required type="text" id="Mname" name="Mname" placeholder="Petriwich">
+					</div>
+					<div class="form__inputs form__sign">
+						<label for="password">Date of birth</label>
+						<input required type="date" id="Bdate" name="Bdate" min="2005-01-01" placeholder="01.01.1900">
+					</div>
+					<div class="form__inputs form__sign">
+						<label for="groups">Group</label>
+						<select id="groups" name="groups" required>
+							<option value="IA-11">ІА-11</option>
+							<option value="IA-12">ІА-12</option>
+							<option value="IA-13">ІА-13</option>
+							<option value="IA-14">ІА-14</option>
+						</select>
+					</div>
+					<div class="form__inputs form__sign">
+						<button type="submit" form="registerForm">Sign up</button>
+					</div>
+				</form>
+			</div>
+			
+		</content>
+		<footer class="footer">
+			<!-- @import "footer.html" -->
+		</footer>
+	</div>
+	
+</body>
+</html>
